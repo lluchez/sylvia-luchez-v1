@@ -1,0 +1,43 @@
+/* <![CDATA[ */
+
+
+.for_small_screen { display: none; }
+
+
+/** General Styles */
+h1 { font-size: 140%; }
+h2 { font-size: 120%; }
+h3 { font-size: 100%; }
+#site-title { position: absolute; left: 10px; top: 3px; }
+.category_label:after { content: ':'; }
+#site-menu { position: absolute; left: 5px; top: 60px; }
+#site-menu ul { padding: 0; padding-left: 10px; list-style: none; }
+#site-menu ul li { margin: 0; padding: 0; cursor: pointer; }
+#site-menu ul li img { opacity: 0.75; }
+.desktop #site-menu ul li:hover img { opacity: 0.82; }
+#site-menu ul li.selected img { opacity: 1.0; }
+#site-menu ul li.def img.hover, #site-menu ul li.hover img.def { display: none; }
+#site-menu ul li.selected img.def { display: none; }
+#site-menu ul li.selected img.hover { display: initial; }
+#content-wrapper { position: absolute; top: 50px; left: 120px; bottom: 20px; right: 20px; }
+#content-wrapper .frame { position: absolute; width: 100%; height: 100%; background-color: #EEE; opacity: 0.73;
+	border: 2px solid #333; border-radius: 20px; box-shadow: 8px 8px 5px 3px rgba(0,0,0,0.35); }
+#content-wrapper #content { position: absolute; top: 15px; left: 15px; right: 15px; bottom: 15px; }
+#content-wrapper #content, #content-wrapper #content .page-content { overflow-y: auto;  }
+
+
+/** News Styles */
+#news-box h2 .date:before { content: " - "; }
+#news-box h2 .date { font-style: italic; }
+#news-box .description { text-align: center; }
+
+
+/** Works/Gallery Styles */
+.folder_label { float: left; padding-top: 6px; font-weight: bold; }
+.folder_selector .folder_name { display: none; }
+ul#work-menu { margin: 0; padding: 0; padding-left: 10px; list-style: none; }
+ul#work-menu  li { float: left; margin-left: 10px; border-radius: 4px; padding: 6px 12px; border: 1px solid #CCC;
+	cursor: pointer; font-weight: bold; letter-spacing: 1px; color: white; }
+
+
+/* ]]> */

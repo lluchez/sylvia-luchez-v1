@@ -1,0 +1,106 @@
+/* <![CDATA[ */
+
+
+.for_large_screen { display: none; }
+
+
+/** General Styles */
+body { background: none; }
+h1 { font-size: 160%; }
+h2 { font-size: 130%; }
+h3 { font-size: 110%; }
+#site-title { display: flex; flex-direction: row; width: 100%; height: 60px; position: fixed; left: 0; top: 0; _transition: background-color 0.2s ease-out; }
+#site-title * { color: white; }
+#site-title.opened { transform: translate(120px, 0); }
+#site-title label { padding: 0 10px; font-size: 1.5em; line-height: 60px; letter-spacing: 1px; }
+#site-title #btn-menu { width: 60px; height: 60px; cursor: pointer; background: url('mobile/hamburger.png') no-repeat center; background-size: contain; }
+#site-menu { position: fixed; width: 120px; height: 100%; display: none; _transition: transform 0.3s ease-out; z-index: 100; }
+#site-menu.opened { display: block; transform: translate(0,0); }
+#site-menu ul { padding: 0; list-style: none; }
+#site-menu ul li { padding: 1em; cursor: pointer; }
+#site-menu ul li.selected { background-color: #FAFAFA !important; _font-style: italic; }
+#site-menu ul li label { color: white; font-size: 1.5em; cursor: inherit; }
+#content-wrapper { position: absolute; width: 100%; top: 60px; bottom: 0; }
+#content-wrapper .frame { position: absolute; width: 100%; height: 100%; background: #EEE url('empty.gif') no-repeat center; background-size: cover; opacity: 0.35; }
+#content-wrapper #content { position: absolute; width: 100%; height: 100%; overflow-y: auto; }
+#content-wrapper #content .page-content { padding: 10px; }
+
+
+/** Contact Form Styles */
+#contact-box form .field .input { margin-left: 10px; margin-right: 0; }
+#contact-box form .actions .btn_send_email { padding: 10px 25px 10px 65px; background-position: 20px 50%; }
+
+
+/** Works/Gallery Styles */
+.menu_holder { font-size: 1.5em; }
+.menu_holder:after { clear: both; }
+.menu_holder .folder_label, .menu_holder .folder_selector { float: left; display: inline-block;
+	padding: 6px 12px; background-color: white; border-radius: 4px; border: 1px solid #CCC; }
+.menu_holder .folder_label { border-top-right-radius: 0; border-bottom-right-radius: 0; border-right-width: 0; }
+.menu_holder .folder_selector { position: relative; border-top-left-radius: 0; border-bottom-left-radius: 0; cursor: pointer; }
+.desktop .menu_holder .folder_selector:hover { background-color: #F8F8F8; }
+.menu_holder .folder_selector * { cursor: inherit; }
+.menu_holder .folder_selector .caret { display: inline-block; width: 0; height: 0; margin-left: 5px; _margin-bottom: 2px; vertical-align: middle;
+	border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid #000; }
+.menu_holder ul#work-menu { position: absolute; display: none; top: 100%; left: 0; min-width: 160px; box-sizing: border-box; list-style: none; 
+	margin: 2px 0 0; padding: 5px 0; background-color: white; border: 1px solid rgba(0,0,0,0.15); border-radius: 4px; z-index: 9; }
+.menu_holder ul#work-menu.opened { display: block; }
+.menu_holder ul#work-menu  li { position: relative; cursor: pointer; background-color: inherit; padding: 5px 20px; }
+.menu_holder ul#work-menu  li:hover { background-color: #F8F8F8; }
+.menu_holder ul#work-menu  li.selected { background-color: white; }
+.menu_holder ul#work-menu  li.selected label { position: absolute; left: 8px; top: 50%; margin-top: -2px; display: block; width: 5px; height: 5px; border-radius: 10px; }
+#gallery .thumb { background-color: white; border-radius: 0; opacity: 0.9; }
+
+
+/** News Styles */
+#news-box h2 .date { display: block; }
+#news-box .description { text-align: justify; }
+#news-box table.item_details { width: 100%; }
+
+
+/** Carousel Styles */
+#carousel .text { position: relative; padding: 0; opacity: 0.9; left: auto; right: auto; }
+#carousel .title { font-size: 100%; }
+#carousel .desc { font-size: 80%; }
+
+
+/** Portrait Mode Styles */
+@media all and (orientation: portrait)
+{
+	#content-wrapper .frame { background-image: url('growth.jpg'); }
+	#site-title, #site-menu { background-color: #613; }
+	#site-title.opened #btn-menu { background-color: #724; }
+	.desktop #site-title #btn-menu:hover, .desktop #site-menu ul li:hover { background-color: #835; }
+	#site-menu ul li.selected label { color: #602; }
+	
+	.menu_holder .folder_label, .menu_holder .folder_selector, .menu_holder ul#work-menu { border-color: #613; }
+	.menu_holder .folder_label { color: #613; }
+	.menu_holder ul#work-menu  li:hover { color: #613; }
+	.menu_holder ul#work-menu  li.selected { color: #835; background-color: #FFF0F4; border-color: #835; }
+	.menu_holder ul#work-menu  li.selected label { background-color: #835; }
+}
+
+
+/** Landscape Mode Styles */
+@media all and (orientation: landscape)
+{
+	#content-wrapper .frame { background-image: url('construction_and_calamity_1.jpg'); }
+	/*#content-wrapper .frame { background-image: url('dream.jpg'); }*/
+	#site-title, #site-menu { background-color: #315; }
+	#site-title.opened #btn-menu { background-color: #426; }
+	.desktop #site-title #btn-menu:hover, .desktop #site-menu ul li:hover { background-color: #537; }
+	#site-menu ul li.selected label { color: #304; }
+	
+	.menu_holder .folder_label, .menu_holder .folder_selector, .menu_holder ul#work-menu { border-color: #315; }
+	.menu_holder .folder_label { color: #315; }
+	.menu_holder ul#work-menu  li:hover { color: #315; }
+	.menu_holder ul#work-menu  li.selected { color: #537; background-color: #F4F0FF; border-color: #537; }
+	.menu_holder ul#work-menu  li.selected label { background-color: #537; }
+}
+
+@media (max-width: 390px) {
+	#site-title .sm-not-visible { display: none; color: inherit; }
+}
+
+
+/* ]]> */

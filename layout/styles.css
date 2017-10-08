@@ -1,0 +1,107 @@
+/* <![CDATA[ */
+
+
+/** Common Elements Styles */
+* { font-family: Tahoma, Sans-Serif, Georgia; font-size: 1em; color: black; }
+body, html, ul { margin: 0; }
+a, a img { border: 0; }
+.clearer { clear: both; }
+.margin-centered { margin-left: auto; margin-right: auto; }
+
+
+/** General Styles */
+body { z-index: 0; position: fixed; width: 100%; height: 100%; display: block; border: 0;
+	background: url(empty.gif) no-repeat center; background-size: cover; background-attachment: fixed; }
+h1 { font-size: 160%; letter-spacing: 3px; margin: 10px; text-align: center; margin-top: 5px; }
+h2 { font-size: 130%; letter-spacing: 1px; margin: 10px; border-bottom: 1px solid black; }
+h3 { font-size: 110%; letter-spacing: 1px; margin: 10px; text-decoration: underline; _border-bottom: 1px solid black; }
+form input, form select, form textarea { border-radius: 4px; padding: 6px 12px; border: 1px solid #CCC; }
+.info-box { margin: 10px 20px 20px; padding: 15px; padding-left: 50px; background: url('form/info.gif') white no-repeat 10px center;
+	border: 1px solid #DDD; border-radius: 5px; box-shadow: 2px 2px 5px -3px rgba(0,0,0,0.35); }
+sup { font-size: 80%; }
+
+.img-responsive { display: block; max-width: 100%; height: auto; }
+.table-row:after { clear: both; display: table; content: " "; }
+.table-row .cell-of-3 { float: left; width: 33.3333333%; box-sizing: border-box; position: relative; }
+
+
+/** About Styles */
+#content #about-box h2 { font-family: Sans-Serif; }
+#content #about-box .id_photo_holder { float: right; margin: 10px; }
+#content #about-box .text-block { margin: 0 30px; }
+#content #about-box .text-block p { font-family: Sans-Serif; text-align: justify; }
+
+
+/** Works/Gallery Styles */
+/*.category_label { float: left; padding-top: 6px; font-weight: bold; }
+ul#work-menu { margin: 0; padding: 0; padding-left: 10px; list-style: none; }
+ul#work-menu  li { float: left; margin-left: 10px; border-radius: 4px; padding: 6px 12px; border: 1px solid #CCC;
+	cursor: pointer; font-weight: bold; letter-spacing: 1px; color: white; }*/
+#gallery { margin-top: 5px; }
+#gallery .thumb { cursor: pointer; float: left; border: 1px solid #888; padding: 3px; margin: 10px; height: /*108 + (2 x padding) + (2 x border)*/ 114px; 
+	background: white url('void.png') no-repeat center; border-radius: 3px; box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.35); opacity: 0.8; }
+.desktop #gallery .thumb:hover { opacity: 1.0; }
+
+
+/** News Styles */
+#news-box .not_first_news { margin-top: 30px; }
+#news-box h2 .date{ font-size: 90%; }
+#news-box h2 .name{ color: inherit; }
+#news-box .statement-block, #news-box .item_details_holder { margin: 10px; }
+#news-box .statement-block .text-block { padding: 0.5em; background-color: rgba(255,255,255, 0.5); }
+#news-box .statement-block .text-block p { font-family: Sans-Serif; text-align: justify; margin: 0.5em; }
+#news-box .statement-block .text-block p img.open_quote { width: 16px; }
+#news-box .statement-block .text-block p img.close_quote { width: 16px; vertical-align: top; }
+#news-box center img { width: 100%; max-width: 300px; }
+#news-box .description { padding-bottom: 5px; }
+#news-box table.item_details { margin: 0 auto; background-color: rgba(255,255,255, 0.5); }
+#news-box table.item_details td { padding: 2px 5px; }
+#news-box table.item_details td.label { text-align: right; font-weight: bold; }
+#news-box table.item_details td.label span:after { content: ":"; }
+#news-box  .news-img-holder-cell img.img-responsive { max-width: 95%; margin-left: auto; margin-right: auto; }
+
+
+/** Contact Styles */
+#contact-box .form-header { position: relative; height: 70px; margin: 0 auto; background: url('form/email_form_header.png') no-repeat center; text-align: center; }
+#contact-box .form-header label { display: block; font-size: 2em; margin-right: 20px; line-height: 70px; letter-spacing: 1px; }
+#contact-box form { max-width: 500px; margin: 5px auto; }
+#contact-box form .field label { font-weight: bold; letter-spacing: 1px; text-shadow: silver 2px 2px 2px; }
+#contact-box form .field .input { margin: 2px 5px 8px 20px; }
+#contact-box form .field .input .fill { box-sizing: border-box; width: 100%; }
+#contact-box form .sec-code img { vertical-align: top; border-radius: 4px; margin-top: 1px; }
+#contact-box form #field_sec_code { cursor: help; margin-left: 5px; padding: 2px; }
+#contact-box form #btn_new_sec_code { cursor: pointer; padding: 3px; }
+#contact-box form .required { cursor: help; }
+#contact-box form .required span { color: red; font-weight: normal; cursor: help; }
+#contact-box form .actions { text-align: right; margin-top: 10px; }
+#contact-box form .actions .btn_send_email { background: white url('form/send_email.png') no-repeat 15px 50%; cursor: pointer; padding: 5px 15px 5px 55px; border-radius: 4px; letter-spacing: 2px; }
+#contact-box form.submitted .hide-when-submitted { display: none; }
+#contact-box form .show-when-submitted { display: none; }
+#contact-box form.submitted .show-when-submitted { display: block; }
+#contact-box form .email-sent { max-width: 400px; text-align: center; color: #008; }
+
+
+/** Carousel Styles */
+body #carousel { display: none; }
+body.carousel #carousel { display: block; }
+#carousel, #carousel .overlay { position: absolute; width: 100%; height: 100%; }
+#carousel .overlay { background-color: black; opacity: 0.95; }
+#carousel .button { position: absolute; opacity: 0.6; background: url('void.png') no-repeat center; -webkit-user-select: none; z-index: 11; }
+#carousel .nav { top: 50px; bottom: 50px; width: 40px; z-index: 10; }
+#carousel .btn_close { width: 40px; height: 40px; top: 0; right: 0; background-image: url('carousel/close.png'); }
+#carousel .btn_prev { left: 0;  background-image: url('carousel/prev.png'); }
+#carousel .btn_next { right: 0; background-image: url('carousel/next.png'); }
+#carousel .picture { position: absolute; border: 2px solid white; box-shadow: 8px 8px 5px 3px rgba(0,0,0,0.35);
+	background: url('void.png') no-repeat center; background-size: 100%; cursor: move; }
+#carousel .text-holder { position: absolute; left: 40px; right: 40px; padding: 15px; color: white; text-align: center; cursor: default; opacity: 0.8; }
+#carousel .text { color: white; text-align: center; cursor: default; }
+#carousel .title { top: 0; letter-spacing: 2px; font-size: 120%; font-weight: bold; }
+#carousel .desc { bottom: 0; letter-spacing: 1px; font-size: 110%; }
+#carousel .preview { display: none; } /* For Facebook to be able to generate the image preview */
+.desktop #carousel .button:hover { cursor: pointer; opacity: 1.0; }
+.desktop #carousel .text:hover { opacity: 1.0; }
+#carousel .sold-mark { display: none; vertical-align: middle; cursor: help; }
+#carousel.sold .sold-mark { display: inline; }
+
+
+/* ]]> */

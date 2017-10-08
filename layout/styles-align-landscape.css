@@ -1,0 +1,26 @@
+/* <![CDATA[ */
+
+
+/*body { background-image: url('dream.jpg'); }*/
+body { background-image: url('construction_and_calamity_1.jpg'); }
+.color1, h1, a { color: #204; }
+.color2, h2, .desktop a:hover { color: #315; }
+.color3, h3 { color: #537; }
+h2 { border-bottom-color: #315; }
+.menu_holder .folder_label { color: #204; }
+ul#work-menu  li { background-color: #315; border-color: #204; }
+ul#work-menu  li:hover { background-color: #537; } /* Do not prefix this rule with ".desktop" */
+ul#work-menu  li.selected{ background-color: white; color: #537; border-color: #537; }
+#gallery .thumb { background-color: #FAF4FF; }
+.desktop #gallery .thumb:hover { background-color: white; }
+#contact-box form .actions .btn_send_email { color: white; background-color: #315; border: 1px solid #315; }
+#contact-box form #field_sec_code { background-color: #537;  }
+#contact-box form #btn_new_sec_code { background-color: #315; }
+form input:focus, form select:focus, form textarea:focus { border-color: #204; }
+
+#contact-box form .input ::-webkit-input-placeholder { color: rgba(51,17,85,0.4); }
+#contact-box form .input ::-moz-placeholder { color: rgba(51,17,85,0.4); }
+#contact-box form .input :-moz-placeholder { color: rgba(51,17,85,0.4); }
+#contact-box form .input :-ms-input-placeholder { color: rgba(51,17,85,0.4); }
+
+/* ]]> */

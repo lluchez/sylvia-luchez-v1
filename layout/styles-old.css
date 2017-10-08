@@ -1,0 +1,40 @@
+/* <![CDATA[ */
+
+
+/** General Styles */
+body.portrait img#landscape_bkgd, body.landscape img#portrait_bkgd { display: none; }
+#contact-box form { width: 500px; }
+
+
+/** Landscape Mode Styles */
+body.landscape .color1, body.landscape h1, body.landscape a { color: #204; }
+body.landscape .color2, body.landscape h2, body.landscape a:hover { color: #315; }
+body.landscape .color3, body.landscape h3 { color: #537; }
+body.landscape h2 { border-bottom-color: #315; }
+body.landscape ul#work-menu  li { background-color: #315; border-color: #204; }
+body.landscape ul#work-menu  li:hover { background-color: #537; }
+body.landscape ul#work-menu  li.selected{ background-color: white !important; color: #537 !important; border-color: #537; }
+body.landscape #gallery .thumb { background-color: #FAF4FF; }
+body.landscape #gallery .thumb:hover { background-color: white; }
+body.landscape #contact-box form .actions .btn_send_email { color: white; background-color: #315; border: 1px solid #315; }
+body.landscape#contact-box form #field_sec_code { background-color: #537;  }
+body.landscape#contact-box form #btn_new_sec_code { background-color: #315; }
+body.landscape form input:focus, body.landscape form select:focus, body.landscape form textarea:focus { border-color: #204; }
+
+
+/** Portrait Mode Styles */
+body.portrait .color1, body.portrait h1, body.portrait a { color: #602; }
+body.portrait .color2, body.portrait h2, body.portrait a:hover { color: #713; }
+body.portrait .color3, body.portrait h3 { color: #713; }
+body.portrait h2 { border-bottom-color: #613; }
+body.portrait ul#work-menu  li { background-color: #613; border-color: #602; }
+body.portrait ul#work-menu  li:hover { background-color: #835; }
+body.portrait ul#work-menu  li.selected{ background-color: white !important; color: #935 !important; border-color: #935; }
+body.portrait #gallery .thumb { background-color: #FFE8F0; }
+body.portrait #gallery .thumb:hover { background-color: white; }
+body.portrait #contact-box form .actions .btn_send_email { color: white; background-color: #713; border: 1px solid #713; }
+body.portrait #contact-box form #field_sec_code { background-color: #935;  }
+body.portrait #contact-box form #btn_new_sec_code { background-color: #713; }
+body.portrait form input:focus, body.portrait form select:focus, body.portrait form textarea:focus { border-color: #602; }
+
+/* ]]> */

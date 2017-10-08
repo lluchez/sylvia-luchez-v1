@@ -1,0 +1,25 @@
+/* <![CDATA[ */
+
+
+body { background-image: url('growth.jpg'); }
+.color1, h1, a { color: #602; }
+.color2, h2, .desktop a:hover { color: #713; }
+.color3, h3 { color: #835; }
+h2 { border-bottom-color: #613; }
+.menu_holder .folder_label { color: #602; }
+ul#work-menu  li { background-color: #613; border-color: #602; }
+ul#work-menu  li:hover { background-color: #835; } /* Do not prefix this rule with ".desktop" */
+ul#work-menu  li.selected{ background-color: white; color: #935; border-color: #935; }
+#gallery .thumb { background-color: #FFF4FA; }
+.desktop #gallery .thumb:hover { background-color: white; }
+#contact-box form .actions .btn_send_email { color: white; background-color: #713; border: 1px solid #713; }
+#contact-box form #field_sec_code { background-color: #935;  }
+#contact-box form #btn_new_sec_code { background-color: #713; }
+form input:focus, form select:focus, form textarea:focus { border-color: #602; }
+
+#contact-box form .input ::-webkit-input-placeholder { color: rgba(119,17,51,0.5); }
+#contact-box form .input ::-moz-placeholder { color: rgba(119,17,51,0.5); }
+#contact-box form .input :-moz-placeholder { color: rgba(119,17,51,0.5); }
+#contact-box form .input :-ms-input-placeholder { color: rgba(119,17,51,0.5); }
+
+/* ]]> */

@@ -1,0 +1,18 @@
+/* <![CDATA[ */
+
+
+/** Imported Font */
+@font-face { font-family: menuFont; src: url('fonts/daniel.eot?#') format('eot'), url('fonts/daniel.woff') format('woff'), url('fonts/daniel.ttf') format('truetype'); }
+@font-face { font-family: menuFont; src: url('fonts/danielbd.eot?#') format('eot'), url('fonts/danielbd.woff') format('woff'), url('fonts/danielbd.ttf') format('truetype'); font-stretch: bold; }
+
+
+/** General Styles */
+div.background { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: url(empty.gif) no-repeat center; background-size: cover; }
+.page-content h1 { display: none; }
+
+
+/** Contact Form Styles */
+#contact-box .form-header label { font-family: menuFont; }
+
+
+/* ]]> */

@@ -1,0 +1,14 @@
+# NOTE: Make sure to remove "AllowOverride None" from the directive <Directory ".../www/">
+<IfModule mod_rewrite.c>
+	DirectoryIndex index.php
+	
+	RewriteEngine On
+
+	#RewriteBase /
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^([a-z]+)\.(html|php)	index.php?page=$1 [L,QSA]
+	# NOTE: [L] -> Last Rule, [QSA] -> forward GET arguments
+	
+</IfModule>
